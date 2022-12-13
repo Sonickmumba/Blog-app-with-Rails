@@ -57,17 +57,13 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Blog app with ROR] <a name="about-project"></a>
+# 📖 [Blog app with Rails] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**Blog app** is a classic example of a blog website that shows the list of posts and empower readers to interact with them by adding comments and liking posts.
+**Blog app with Rails** is a classic example of a blog website that shows the list of posts and empower readers to interact with them by adding comments and liking posts.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
@@ -101,7 +97,7 @@ After you're finished please remove all the comments and instructions!
 <li> - GET    /api/v1/users/:user_id/posts/:post_id/comments/:id </li> 
 <li> - GET    /api/v1/users/:user_id/posts  </li>  
 <li> - POST   /api/v1/users/:user_id/posts </li>   
-<li> - GET    /api/v1/users/:user_id/posts/new </li>                                                                                                   
+<li> - GET    /api/v1/users/:user_id/posts/new <li>                                                                                                   
 <li> - GET    /api/v1/users/:user_id/posts/:id  </li>                                                                                           
 <li> - GET    /api/v1/users  </li>                                                   
 <li> - POST   /api/v1/users  </li>                                                                                                                           <li> - GET    /api/v1/users/:id </li> 
@@ -110,7 +106,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- Features -->
 
-### Key Features <a name="key-features"></a>
+<!-- ### Key Features <a name="key-features"></a>
 
 > Describe between 1-3 key features of the application.
 
@@ -118,13 +114,11 @@ After you're finished please remove all the comments and instructions!
 - **[key_feature_2]**
 - **[key_feature_3]**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://yourdeployedapplicationlink.com)
 
@@ -133,8 +127,6 @@ After you're finished please remove all the comments and instructions!
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -231,25 +223,17 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Sonick Mumba**
 
 - GitHub: [@Sonickmumba](https://github.com/Sonickmumba)
 - Twitter: [@Sonick](https://twitter.com/MumbaSonick)
 - LinkedIn: [Sonick Mumba](https://linkedin.com/in/sonickmumba)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/ithubhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
+<!-- ## 🔭 Future Features <a name="future-features"></a>
 
 > Describe 1 - 3 features you will add to the project.
 
@@ -257,7 +241,7 @@ Example:
 - [ ] **[new_feature_2]**
 - [ ] **[new_feature_3]**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- CONTRIBUTING -->
 
@@ -273,7 +257,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
+<!-- > Write a message to encourage readers to support your project -->
 
 If you like this project...
 
@@ -283,7 +267,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+<!-- > Give credit to everyone who inspired your codebase. -->
 
 I would like to thank...
 
@@ -291,7 +275,7 @@ I would like to thank...
 
 <!-- FAQ (optional) -->
 
-## ❓ FAQ <a name="faq"></a>
+<!-- ## ❓ FAQ <a name="faq"></a>
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
@@ -303,7 +287,7 @@ I would like to thank...
 
   - [Answer_2]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- LICENSE -->
 
