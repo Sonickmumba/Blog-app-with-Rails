@@ -57,29 +57,26 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Blog app with Rails] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+**Blog app with Rails** is a classic example of a blog website that shows the list of posts and empower readers to interact with them by adding comments and liking posts.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://reactjs.org/">Ruby</a></li>
+    <li><a href="https://reactjs.org/">Ruby On Rails</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://expressjs.com/">Puma</a></li>
   </ul>
 </details>
 
@@ -90,9 +87,26 @@ After you're finished please remove all the comments and instructions!
   </ul>
 </details>
 
+<details>
+<summary>Api Endpoints</summary>
+  <ul>
+<li> POST   /api/v1/signup </li> 
+<li> POST   /api/v1/login </li>                                                                     
+<li> - GET    /api/v1/users/:user_id/posts/:post_id/comments </li>                                         
+<li> - POST   /api/v1/users/:user_id/posts/:post_id/comments </li> 
+<li> - GET    /api/v1/users/:user_id/posts/:post_id/comments/:id </li> 
+<li> - GET    /api/v1/users/:user_id/posts  </li>  
+<li> - POST   /api/v1/users/:user_id/posts </li>   
+<li> - GET    /api/v1/users/:user_id/posts/new <li>                                                                                                   
+<li> - GET    /api/v1/users/:user_id/posts/:id  </li>                                                                                           
+<li> - GET    /api/v1/users  </li>                                                   
+<li> - POST   /api/v1/users  </li>                                                                                                                           <li> - GET    /api/v1/users/:id </li> 
+  </ul>
+</details>
+
 <!-- Features -->
 
-### Key Features <a name="key-features"></a>
+<!-- ### Key Features <a name="key-features"></a>
 
 > Describe between 1-3 key features of the application.
 
@@ -100,13 +114,11 @@ After you're finished please remove all the comments and instructions!
 - **[key_feature_2]**
 - **[key_feature_3]**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://yourdeployedapplicationlink.com)
 
@@ -116,14 +128,25 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
 
+> Ruby version : `ruby 3.1.2p20`
+    run `ruby -v`
+
+> SQLite3 version : `3.40.0`
+    run `sqlite3 --version`
+
+> npm version : `8.15.0`
+    run `npm -v`
+
+> yarn version : `1.22.19`
+    run `yarn -v`
+
+> Database : **PostgreSQL**
 <!--
 Example command:
 
@@ -136,43 +159,44 @@ Example command:
 
 Clone this repository to your desired folder:
 
-<!--
+
 Example commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone git@github.com:Sonickmumba/Blog-app.git
 ```
---->
+-
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
+
+<!-- Example command: -->
 
 ```sh
-  cd my-project
-  gem install
+  cd Blog-app
+  bundle install
 ```
---->
+-
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
+
+<!-- Example command: -->
 
 ```sh
-  rails server
+  rails server or rails s
 ```
---->
+-
 
 ### Run tests
 
-To run tests, run the following command:
+<!-- To run tests, run the following command: -->
+The app is tested using Rspec library you can check the tests by opening your terminal, then change the directory to the location of this repo using this command `cd file_path`, then run this command `gem install rspec`, finally run this command `rspec spec` or `rspec spec --format doc` for documented test results you should see a screen like that comming soon
 
 <!--
 Example command:
@@ -200,25 +224,17 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 **Sonick Mumba**
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Sonickmumba](https://github.com/Sonickmumba)
+- Twitter: [@Sonick](https://twitter.com/MumbaSonick)
+- LinkedIn: [Sonick Mumba](https://linkedin.com/in/sonickmumba)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
+<!-- ## 🔭 Future Features <a name="future-features"></a>
 
 > Describe 1 - 3 features you will add to the project.
 
@@ -226,7 +242,7 @@ Example:
 - [ ] **[new_feature_2]**
 - [ ] **[new_feature_3]**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- CONTRIBUTING -->
 
@@ -242,9 +258,9 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
+<!-- > Write a message to encourage readers to support your project -->
 
-If you like this project...
+If you like this project it a thumb up : 👍 and share this projects with your friends
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -252,7 +268,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+<!-- > Give credit to everyone who inspired your codebase. -->
 
 I would like to thank...
 
@@ -260,7 +276,7 @@ I would like to thank...
 
 <!-- FAQ (optional) -->
 
-## ❓ FAQ <a name="faq"></a>
+<!-- ## ❓ FAQ <a name="faq"></a>
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
@@ -272,7 +288,7 @@ I would like to thank...
 
   - [Answer_2]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- LICENSE -->
 
