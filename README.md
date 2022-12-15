@@ -57,10 +57,10 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Blog app with Rails] <a name="about-project"></a>
+# 📖 Blog app with Rails <a name="about-project"></a>
 ![d3464a4351fdf340ccb6bb37c281381a](https://user-images.githubusercontent.com/106140591/207802604-ed8f4189-77f5-46e4-8629-ae9cd64707e7.gif)
 
-**Blog app with Rails** is a classic example of a blog website that shows the list of posts and empower readers to interact with them by adding comments and liking posts.
+**Blog app with Rails** is a classic example of a blog website that shows the list of posts and empower readers to interact with them by adding comments and liking posts. It follow the following data model (this is an Entity Relationship Diagram):
 
 # ERD Diagram
 ![blog_app_erd](https://user-images.githubusercontent.com/106140591/207804052-d339210f-ed04-43b0-bbcc-4358ba54d1df.png)
