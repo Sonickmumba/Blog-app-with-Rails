@@ -6,12 +6,10 @@ class Post < ApplicationRecord
   # post validations.
   validates :title, presence: true, length: { maximum: 250 }, allow_blank: false
   validates :comments_counter, presence: true, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
-  validates :likes_counter, presence: true, numericality: { only_integer: true, greater_than_or_equal_to: 0} 
+  validates :likes_counter, presence: true, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
 
   # menthod to update the post counter for a given user
   after_save :update_post_counter_user
-
-  private
 
   def update_post_counter_user
     author.increment!(:posts_counter)
