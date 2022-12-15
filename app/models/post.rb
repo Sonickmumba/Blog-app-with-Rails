@@ -6,6 +6,8 @@ class Post < ApplicationRecord
   # menthod to update the post counter for a given user
   after_save :update_post_counter_user
 
+  private
+  
   def update_post_counter_user
     author.increment!(:posts_counter)
   end
