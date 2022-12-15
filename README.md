@@ -57,19 +57,32 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Blog app with Rails] <a name="about-project"></a>
+# 📖 Blog app with Rails <a name="about-project"></a>
+![d3464a4351fdf340ccb6bb37c281381a](https://user-images.githubusercontent.com/106140591/207802604-ed8f4189-77f5-46e4-8629-ae9cd64707e7.gif)
 
-**Blog app with Rails** is a classic example of a blog website that shows the list of posts and empower readers to interact with them by adding comments and liking posts.
+**Blog app with Rails** is a classic example of a blog website that shows the list of posts and empower readers to interact with them by adding comments and liking posts. It follow the following data model (this is an Entity Relationship Diagram):
+
+# ERD Diagram
+![blog_app_erd](https://user-images.githubusercontent.com/106140591/207804052-d339210f-ed04-43b0-bbcc-4358ba54d1df.png)
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Client</summary>
+  <summary>Languages</summary>
   <ul>
     <li><a href="https://reactjs.org/">Ruby</a></li>
-    <li><a href="https://reactjs.org/">Ruby On Rails</a></li>
+    <li><a href="https://www.javacript.com/">Javascript</a></li>
+    <li><a href="https://html.com/">HTML</a></li>
+    <li><a href="https://www.w3.org/Style/CSS/Overview.en.html/">CSS</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Frameworks</summary>
+  <ul>
+    <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
   </ul>
 </details>
 
@@ -106,21 +119,26 @@ After you're finished please remove all the comments and instructions!
 
 <!-- Features -->
 
-<!-- ### Key Features <a name="key-features"></a>
+### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+<!-- > Describe between 1-3 key features of the application. -->
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Keep user records]** - 
+- **[Add comments]**
+- **[Display Comments]**
+- **[Display posts]**
+- **[Delete post]**
+- **[Keep likes records]**
+- **[Like comments]**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+<!-- - [Live Demo Link](https://yourdeployedapplicationlink.com) -->
+- Comming soon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -136,24 +154,11 @@ In order to run this project you need:
 
 > Ruby version : `ruby 3.1.2p20`
     run `ruby -v`
-
-> SQLite3 version : `3.40.0`
-    run `sqlite3 --version`
-
-> npm version : `8.15.0`
-    run `npm -v`
-
-> yarn version : `1.22.19`
-    run `yarn -v`
-
 > Database : **PostgreSQL**
-<!--
-Example command:
 
 ```sh
  gem install rails
 ```
- -->
 
 ### Setup
 
@@ -172,11 +177,10 @@ Example commands:
 
 Install this project with:
 
-
 <!-- Example command: -->
 
-```sh
-  cd Blog-app
+```
+  cd Blog-app-with-rails
   bundle install
 ```
 -
@@ -184,7 +188,6 @@ Install this project with:
 ### Usage
 
 To run the project, execute the following command:
-
 
 <!-- Example command: -->
 
@@ -209,6 +212,7 @@ Example command:
 ### Deployment
 
 You can deploy this project using:
+- Comming soon
 
 <!--
 Example:
@@ -234,15 +238,15 @@ Example:
 
 <!-- FUTURE FEATURES -->
 
-<!-- ## 🔭 Future Features <a name="future-features"></a>
+## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+<!-- > Describe 1 - 3 features you will add to the project. -->
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Controllers specs]**
+- [ ] **[Validation]**
+- [ ] **[Views]**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
@@ -271,12 +275,16 @@ If you like this project it a thumb up : 👍 and share this projects with your 
 <!-- > Give credit to everyone who inspired your codebase. -->
 
 I would like to thank...
+- Thanks to **Microverse** for giving the opportunity to learn
+- Code reviewers and coding partners
+- Hat tip to anyone whose code was used
+- Inspiration
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
 
-<!-- ## ❓ FAQ <a name="faq"></a>
+## ❓ FAQ <a name="faq"></a>
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
@@ -288,7 +296,7 @@ I would like to thank...
 
   - [Answer_2]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
