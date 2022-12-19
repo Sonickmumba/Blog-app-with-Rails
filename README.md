@@ -169,7 +169,7 @@ Example commands:
 
 ```sh
   cd my-folder
-  git clone git@github.com:Sonickmumba/Blog-app.git
+  git clone git@github.com:Sonickmumba/Blog-app-with-Rails.git
 ```
 -
 
