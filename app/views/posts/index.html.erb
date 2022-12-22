@@ -1,0 +1,36 @@
+<%= stylesheet_link_tag "post_index.css" %>
+
+<div class="user-posts-container">
+  <div class="show-co">
+    <div class="user-icon-container">
+      <div class="user-icon"> </div>
+    </div>
+    <div class="user-details">
+      <div class="user-name"><%= @user.name %></div>
+      <div class="user-posts-div"><p class="user-posts">Number of posts: <%= @user.posts_counter %></p></div>
+    </div>
+  </div>
+
+  <div class="post-comment-container">
+    <% @posts.each do |post|%>
+      <%= link_to user_post_path(user_id: post.author_id, id: post.id) do %>
+        <div class="postz-container">
+          <div class="id-post">Post #<%= post.id %></div>
+          <div class="id-post-text"><%= post.text %></div>
+
+          <div class="counts-container">
+            <p>Comments: <%= post.comments_counter %></p>
+            <p>Likes: <%= post.likes_counter %></p>
+          </div>
+        </div>
+
+        <div class="comments-container">
+          <% post.recent_comments.each do |comment|%>
+            <div class="recent-comment-div"><%= comment.author.name %> : <%= comment.text %></div>
+          <% end %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="pagination">Pagination</div>
+</div>

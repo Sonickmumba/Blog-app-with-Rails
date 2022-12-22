@@ -1,1 +1,17 @@
-<h2> The page displays the list of users for the Blog app </h2>
+<% stylesheet_link_tag "user_index.css" %>
+
+<div class="users-container">
+  <% User.all.each do |user| %>
+    <%= link_to user do %>
+      <div class="user-container">
+        <div class="user-icon-container">
+          <div class="user-icon"> </div>
+        </div>
+        <div class="user-details">
+          <div class="user-name"><%= user.name %></div>
+          <div class="user-posts-div"><p class="user-posts">Number of posts: <%= user.posts_counter %></p></div>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>
