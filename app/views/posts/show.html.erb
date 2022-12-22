@@ -1,1 +1,24 @@
-<h2> This page display the posts by a user and the Comments for that post </h2>
+<%= stylesheet_link_tag "post_show.css" %>
+
+<div class="post-by-username-container">
+  <div class="pst-user-container">
+    <div class="upper-container">
+      <div class="left-div">
+        Post # &nbsp<%= @post.id %> &nbspby <%= @user.name %>
+      </div>
+
+      <div class="right-div">
+        Comments: <%= @post.comments_counter %>,  Likes: <%= @post.likes_counter %>
+      </div>
+    </div>
+    <div>
+      <p class="posttext"><%= @post.text%></p>
+    </div>
+  </div>
+
+  <div class="lower-container">
+      <% @comments.each do |comment| %>
+        <p><%= comment.author.name %> : <%= comment.text %></p>
+      <% end %>
+  </div>
+</div>
