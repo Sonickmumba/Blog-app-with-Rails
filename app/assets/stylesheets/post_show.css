@@ -33,6 +33,32 @@ body {
   margin: 0;
 }
 
+.leave-comment-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.new-comment-button {
+  border: 2px solid #461e1e;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.formz {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.like-button {
+  padding: 4px;
+  font-size: 2.5rem;
+  height: 80px;
+}
+
 .lower-container {
   border-style: solid;
   padding: 1rem;

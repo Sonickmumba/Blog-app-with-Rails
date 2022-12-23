@@ -41,6 +41,15 @@ body {
   width: 230px;
 }
 
+.link-create-post {
+  width: 160px;
+  border-style: solid;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.2em;
+}
+
 .post-comment-container {
   display: flex;
   flex-direction: column;

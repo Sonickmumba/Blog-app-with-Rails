@@ -14,6 +14,13 @@
     <div>
       <p class="posttext"><%= @post.text%></p>
     </div>
+
+    <div class="leave-comment-container">
+      <%= link_to "Leave a Comment", new_user_post_comment_path(user_id: @post.author_id, post_id: @post.id), class: "new-comment-button" %>
+      <%= form_with model: @like, url: user_post_likes_path(post_id: @post.id), class: "formz" do |form| %>
+        <%= form.submit "Like post", class: "like-button" %>
+      <% end %>
+    </div>
   </div>
 
   <div class="lower-container">
