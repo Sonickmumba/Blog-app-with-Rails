@@ -1,0 +1,10 @@
+<div class="post-form-container">
+  <h1 class="header-title">Add A New Post</h1>
+  <%= form_with model: @post, url: user_posts_path, data: {turbo: false}, class: "post" do |form| %>
+    <div class="post-add-form">
+      <%= form.text_field :title, placeholder: "Enter post title", class: "text-field" %> <br>
+      <%= form.text_area :text, placeholder: "Enter text", class: "text-area", cols: 50, rows: 10 %> <br>
+      <%= form.submit "Add Post", class: "add-post-button" %>
+    </div>
+  <% end %>
+</div>
