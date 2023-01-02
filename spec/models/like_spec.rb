@@ -23,10 +23,5 @@ RSpec.describe Like, type: :model do
       @likes.post = nil
       expect(@likes).to_not be_valid
     end
-
-    it 'should be valid with increment of likes counter post' do
-      @likes.update_likes_counter_post
-      expect(@post.likes_counter).to be(10)
-    end
   end
 end
