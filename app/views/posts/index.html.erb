@@ -19,7 +19,7 @@
     <% @posts.each do |post|%>
       <%= link_to user_post_path(user_id: post.author_id, id: post.id) do %>
         <div class="postz-container">
-          <div class="id-post">Post #<%= post.id %></div>
+          <div class="id-post">Post #<%= post.id %>'</div>
           <div class="id-post-text"><%= post.text %></div>
 
           <div class="counts-container">
@@ -36,5 +36,5 @@
       <% end %>
     <% end %>
   </div>
-  <div class="pagination">Pagination</div>
+  <div class="pagination"><%= link_to 'Pagination', user_posts_path(user_id: @user.id) %></div>
 </div>

@@ -54,6 +54,7 @@ group :development, :test do
 
   gem 'rspec-rails', '~> 4.0.0'
 
+  gem 'database_cleaner'
   gem 'rails-controller-testing'
 end
 
@@ -76,3 +77,5 @@ group :test do
 end
 
 gem 'rubocop', '>= 1.0', '< 2.0'
+
+gem 'bullet', '~> 7.0'
