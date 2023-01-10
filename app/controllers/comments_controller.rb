@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
   def new
-    @comment = Comment.new.includes(:author, :comments, :likes)
+    @comment = Comment.new
   end
 
   def create
