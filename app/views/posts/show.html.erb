@@ -18,7 +18,10 @@
     <div class="leave-comment-container">
       <%= link_to "Leave a Comment", new_user_post_comment_path(user_id: @post.author_id, post_id: @post.id), class: "new-comment-button" %>
       <%= form_with model: @like, url: user_post_likes_path(post_id: @post.id), class: "formz" do |form| %>
-        <%= form.submit "Like post", class: "like-button" %>
+        <%= form.submit "Like post", class: "like-buttone" %>
+      <% end %>
+      <% if can? :destroy, @post %>
+        <%= button_to "Delete post", user_post_path(@post.author.id, @post.id), method: :delete, class: "del-btn" %>
       <% end %>
     </div>
   </div>
@@ -26,6 +29,9 @@
   <div class="lower-container">
       <% @comments.each do |comment| %>
         <p><%= comment.author.name %> : <%= comment.text %></p>
+        <% if can? :destroy, comment %>
+          <%= button_to "Delete Comment", user_post_comment_path(user_id: comment.author.id, post_id: comment.post.id, id: comment.id), method: :delete, class: "del-btn" %>
+        <% end %>
       <% end %>
   </div>
 </div>

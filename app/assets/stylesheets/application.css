@@ -133,3 +133,9 @@
   margin: auto;
   width: 40%;
 }
+
+.del-btn {
+  border: 2px solid black;
+  padding: 6px;
+  border-radius: 8px;
+}
