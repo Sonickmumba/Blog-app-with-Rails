@@ -19,7 +19,6 @@
 
   <div class="posts-container">
     <% @user.recent_post.each do |post| %>
-      
       <%= link_to user_post_path(user_id: post.author_id, id: post.id), class: 'pp' do %>
         <div class="pst-id">
           <div class="post-container">

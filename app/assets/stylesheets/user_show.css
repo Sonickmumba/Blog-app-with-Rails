@@ -28,7 +28,7 @@ body {
 .bio-container {
   display: flex;
   flex-direction: column;
-  height: 100px;
+  height: 120px;
   border-style: solid;
   padding: 0.8rem;
   margin-bottom: 2rem;
@@ -36,7 +36,7 @@ body {
 
 .bio-title {
   font-size: 1.2rem;
-  margin: 0 0 2rem 0;
+  margin: 0 0 1rem 0;
 }
 
 .bio {
@@ -78,7 +78,7 @@ body {
 
 .all-posts {
   border-style: solid;
-  width: 150px;
+  width: 20%;
   text-align: center;
   padding: 0.5em;
   font-size: 1.5em;
