@@ -53,10 +53,8 @@ body {
   height: 40px;
 }
 
-.like-button {
-  padding: 4px;
-  font-size: 1rem;
-  height: 40px;
+.like-buttone {
+  padding: 6px;
 }
 
 .lower-container {

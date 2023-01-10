@@ -82,3 +82,5 @@ end
 gem 'rubocop', '>= 1.0', '< 2.0'
 
 gem 'bullet', '~> 7.0'
+
+gem 'cancancan'
