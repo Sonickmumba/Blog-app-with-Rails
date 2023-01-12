@@ -1,7 +1,10 @@
 class ApplicationController < ActionController::Base
-  before_action :authenticate_user!
+  protect_from_forgery with: :null_session
+  before_action :authenticate_user!, unless: :api_route
 
   before_action :configure_permitted_parameters, if: :devise_controller?
+
+  before_action :authenticate_token!, only: :api_route
 
   # Catch all CanCan errors and alert the user of the exception
   rescue_from CanCan::AccessDenied do |exception|
@@ -21,5 +24,9 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_in) do |user_params|
       user_params.permit(:email, :password, :remember_me)
     end
+  end
+
+  def api_route
+    request.path.start_with?('/api')
   end
 end
