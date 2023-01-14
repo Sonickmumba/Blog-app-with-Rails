@@ -86,3 +86,5 @@ gem 'bullet', '~> 7.0'
 gem 'cancancan'
 
 gem 'jwt'
+
+gem 'rswag'
